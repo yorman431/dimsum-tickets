@@ -1,0 +1,57 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React example starter project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "@babel/runtime": "7.9.6",
+    "@elliemae/ds-basic": "1.8.3",
+    "@elliemae/ds-classnames": "1.8.3",
+    "@elliemae/ds-datagrids": "1.8.3",
+    "@elliemae/ds-date-picker": "1.8.3",
+    "@elliemae/ds-dropdownmenu": "1.8.3",
+    "@elliemae/ds-filterbar": "1.8.3",
+    "@elliemae/ds-icons": "1.8.3",
+    "@elliemae/ds-modal": "1.8.3",
+    "@elliemae/ds-search-field": "1.8.3",
+    "@elliemae/ds-shared": "1.8.3",
+    "@elliemae/ds-system": "1.8.3",
+    "@elliemae/ds-treeview": "1.8.3",
+    "@elliemae/ds-utilities": "1.8.3",
+    "@elliemae/pui-theme": "1.2.0",
+    "core-js": "3.6.5",
+    "hotkeys-js": "3.8.1",
+    "lodash": "4.17.15",
+    "obj-str": "1.0.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "3.4.1",
+    "redux": "4.0.5",
+    "styled-components": "5.1.0",
+    "table-resolver": "4.1.1",
+    "uuid": "8.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "typescript": "3.9.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "homepage": "http://dasm30.github.io/dimsum-tickets"
+}

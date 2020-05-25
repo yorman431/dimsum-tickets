@@ -1,0 +1,35 @@
+@charset 'utf-8';
+// DO NOT PUT ANYTHING IN HERE THAT RENDERS CSS.
+// THIS IS ONLY FOR UTILITY functions, mixins, variables.
+@import '~@elliemae/ds-basic/styles/themes/theme-default.scss';
+
+@import '~@elliemae/ds-basic/styles/base/_generic/_general-functions.scss';
+
+@import '~@elliemae/ds-basic/styles/base/color.scss';
+@import '~@elliemae/ds-basic/styles/base/typography.scss';
+@import '~@elliemae/ds-basic/styles/base/spacing.scss';
+@import '~@elliemae/ds-basic/styles/base/border.scss';
+@import '~@elliemae/ds-basic/styles/base/motion.scss';
+@import '~@elliemae/ds-basic/styles/base/depth.scss';
+@import '~@elliemae/ds-basic/styles/base/iconography.scss';
+
+@import '~@elliemae/ds-basic/styles/base/utility-functions/_functions-base.scss';
+@import '~@elliemae/ds-basic/styles/base/utility-mixins/_mixins-base.scss';
+
+@import '~@elliemae/ds-basic/styles/base/grid/grid';
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('~@elliemae/ds-basic/styles/base/fonts/ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
+  url('~@elliemae/ds-basic/styles/base/fonts/ProximaNovaRegular.eot'),
+  url('~@elliemae/ds-basic/styles/base/fonts/ProximaNovaRegular.woff2') format('woff2'),
+  url('~@elliemae/ds-basic/styles/base/fonts/ProximaNovaRegular.woff') format('woff'),
+  url('~@elliemae/ds-basic/styles/base/fonts/ProximaNovaRegular.ttf') format('truetype'),
+  url('~@elliemae/ds-basic/styles/base/fonts/ProximaNovaRegular.svg#wf') format('svg');
+}
+
+@import '~@elliemae/ds-basic/styles/base/_generic/_normalize.scss';
+@import '~@elliemae/ds-basic/styles/base/_elements/_elements.scss';
+@import '~@elliemae/ds-basic/styles/base/grid.scss';
+
+@import '~@elliemae/ds-basic/styles/components/index.scss';

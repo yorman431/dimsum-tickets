@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+node_modules
+dist
+coverage
+.idea/
+.vscode/
+.yarn-cache
+/.vs
+*.code-workspace
