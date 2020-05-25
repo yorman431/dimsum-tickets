@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3e0cc8a564f61cc373136ff266bb428e",
+    "revision": "7aa93e3a247dff7e6c13b6610164997a",
     "url": "/dimsum-tickets/index.html"
   },
   {
