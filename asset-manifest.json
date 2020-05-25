@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd55fee3.chunk.css",
-    "main.js": "/static/js/main.d41dac25.chunk.js",
-    "main.js.map": "/static/js/main.d41dac25.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.33f659d6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.33f659d6.js.map",
-    "static/js/2.bd961afb.chunk.js": "/static/js/2.bd961afb.chunk.js",
-    "static/js/2.bd961afb.chunk.js.map": "/static/js/2.bd961afb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.27d4a9046444aa9aa2e07734ce2315e4.js": "/precache-manifest.27d4a9046444aa9aa2e07734ce2315e4.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.bd55fee3.chunk.css.map": "/static/css/main.bd55fee3.chunk.css.map",
-    "static/js/2.bd961afb.chunk.js.LICENSE.txt": "/static/js/2.bd961afb.chunk.js.LICENSE.txt",
-    "static/media/styles.scss": "/static/media/ProximaNovaRegular.c1eba532.woff"
+    "main.css": "/dimsum-tickets/static/css/main.20aeee28.chunk.css",
+    "main.js": "/dimsum-tickets/static/js/main.d41dac25.chunk.js",
+    "main.js.map": "/dimsum-tickets/static/js/main.d41dac25.chunk.js.map",
+    "runtime-main.js": "/dimsum-tickets/static/js/runtime-main.5b16f65d.js",
+    "runtime-main.js.map": "/dimsum-tickets/static/js/runtime-main.5b16f65d.js.map",
+    "static/js/2.323b8132.chunk.js": "/dimsum-tickets/static/js/2.323b8132.chunk.js",
+    "static/js/2.323b8132.chunk.js.map": "/dimsum-tickets/static/js/2.323b8132.chunk.js.map",
+    "index.html": "/dimsum-tickets/index.html",
+    "precache-manifest.cc0d2ef764fbd915f1a4bdf7c70e29b3.js": "/dimsum-tickets/precache-manifest.cc0d2ef764fbd915f1a4bdf7c70e29b3.js",
+    "service-worker.js": "/dimsum-tickets/service-worker.js",
+    "static/css/main.20aeee28.chunk.css.map": "/dimsum-tickets/static/css/main.20aeee28.chunk.css.map",
+    "static/js/2.323b8132.chunk.js.LICENSE.txt": "/dimsum-tickets/static/js/2.323b8132.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/dimsum-tickets/static/media/ProximaNovaRegular.c1eba532.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.33f659d6.js",
-    "static/js/2.bd961afb.chunk.js",
-    "static/css/main.bd55fee3.chunk.css",
+    "static/js/runtime-main.5b16f65d.js",
+    "static/js/2.323b8132.chunk.js",
+    "static/css/main.20aeee28.chunk.css",
     "static/js/main.d41dac25.chunk.js"
   ]
 }
