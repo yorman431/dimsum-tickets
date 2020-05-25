@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dimsum-tickets/static/css/main.20aeee28.chunk.css",
+    "main.js": "/dimsum-tickets/static/js/main.d41dac25.chunk.js",
+    "main.js.map": "/dimsum-tickets/static/js/main.d41dac25.chunk.js.map",
+    "runtime-main.js": "/dimsum-tickets/static/js/runtime-main.5b16f65d.js",
+    "runtime-main.js.map": "/dimsum-tickets/static/js/runtime-main.5b16f65d.js.map",
+    "static/js/2.323b8132.chunk.js": "/dimsum-tickets/static/js/2.323b8132.chunk.js",
+    "static/js/2.323b8132.chunk.js.map": "/dimsum-tickets/static/js/2.323b8132.chunk.js.map",
+    "index.html": "/dimsum-tickets/index.html",
+    "precache-manifest.cc0d2ef764fbd915f1a4bdf7c70e29b3.js": "/dimsum-tickets/precache-manifest.cc0d2ef764fbd915f1a4bdf7c70e29b3.js",
+    "service-worker.js": "/dimsum-tickets/service-worker.js",
+    "static/css/main.20aeee28.chunk.css.map": "/dimsum-tickets/static/css/main.20aeee28.chunk.css.map",
+    "static/js/2.323b8132.chunk.js.LICENSE.txt": "/dimsum-tickets/static/js/2.323b8132.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/dimsum-tickets/static/media/ProximaNovaRegular.c1eba532.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b16f65d.js",
+    "static/js/2.323b8132.chunk.js",
+    "static/css/main.20aeee28.chunk.css",
+    "static/js/main.d41dac25.chunk.js"
+  ]
+}
