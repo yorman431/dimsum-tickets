@@ -52,11 +52,6 @@ export default [
       },
     ]
   },
-  // {
-  //   ...getDefaults("Tabs"),
-  //   type: 'group',
-  //   children: []
-  // },
   {
     ...getDefaults("TooltipTextProvider"),
     type: 'group',
@@ -86,6 +81,16 @@ export default [
       {
         ...getDefaults("PUI-2690"),
         path: "TreeView/PUI-2690",
+      }
+    ]
+  },
+  {
+    ...getDefaults("Shuttle"),
+    type: 'group',
+    children: [
+      {
+        ...getDefaults("Overview"),
+        path: "Shuttle/Overview",
       }
     ]
   }

@@ -22,6 +22,7 @@
     "@elliemae/ds-system": "1.8.3",
     "@elliemae/ds-treeview": "1.8.3",
     "@elliemae/ds-utilities": "1.8.3",
+    "@elliemae/ds-shuttle": "1.8.3",
     "@elliemae/pui-theme": "1.2.0",
     "core-js": "3.6.5",
     "hotkeys-js": "3.8.1",
