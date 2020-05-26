@@ -13,8 +13,10 @@ jobs:
         with:
           persist-credentials: false 
 
-      - name: Install and Build 🔧
+      - name: Install 🔧
         run: npm ci
+      - name: Build 🔧
+        run: npm run predeploy
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
