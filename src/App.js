@@ -1,8 +1,8 @@
-import React from "react";
-import "./styles.scss";
-import "@elliemae/ds-system/theme";
-import MainLayout from "./MainLayout";
-import styled from "styled-components";
+import React from 'react';
+import './styles.scss';
+import '@elliemae/ds-system/theme';
+import MainLayout from './MainLayout';
+import styled from 'styled-components';
 
 const StyledDiv = styled.div`
   padding: 8px;
