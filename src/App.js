@@ -5,8 +5,8 @@ import MainLayout from "./MainLayout";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-  margin: 8px;
-  height: 100%;
+  padding: 8px;
+  height: 100vh;
 `;
 const StyledLabel = styled.div`
   margin-bottom: 16px;

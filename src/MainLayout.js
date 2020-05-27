@@ -17,8 +17,8 @@ const renderTicket = (path) => Loadable({
 });
 
 const StyledDiv = styled.div`
-  display: flex;
-  height: 100%;
+  display: flex !important;
+  height: 96%;
 `
 const TicketView = styled.div`
   width: 100%;
@@ -38,7 +38,7 @@ const MainLayout = () => {
     <StyledDiv>
       <TreeView
           data={tickets}
-          // fluid
+          fluid
           groupIcon={<Folder />}
           itemIcon={<FilePdf />}
           onItemClick={onItemClick}

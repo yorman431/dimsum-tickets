@@ -5,10 +5,6 @@ import FilePdf from "@elliemae/ds-icons/FilePdf";
 import nodes from "./nodes";
 import styled from "styled-components";
 
-const StyledDiv = styled.div`
-  height: 100vh;
-`;
-
 const selectTaskEntity = item => {
   console.log("Some selection logic here");
 };
@@ -36,25 +32,23 @@ const Tree = () => {
   };
 
   return (
-    <StyledDiv>
-      <TreeView
-        data={data}
-        fluid
-        groupIcon={<Folder />}
-        instanceRef={instanceRef}
-        itemIcon={<FilePdf />}
-        onOrderChange={setData}
-        // onToggleExpand={item => {
-        //   instanceRef.current.actions.toggleExpand(item, {
-        //     expandAllChildren: true
-        //   });
-        // }}
-        onItemClick={onItemClick}
-        plugins={[SelectablePluginTree]}
-        showChildrenAmount
-        sortable
-      />
-    </StyledDiv>
+    <TreeView
+      data={data}
+      fluid
+      groupIcon={<Folder />}
+      instanceRef={instanceRef}
+      itemIcon={<FilePdf />}
+      onOrderChange={setData}
+      // onToggleExpand={item => {
+      //   instanceRef.current.actions.toggleExpand(item, {
+      //     expandAllChildren: true
+      //   });
+      // }}
+      onItemClick={onItemClick}
+      plugins={[SelectablePluginTree]}
+      showChildrenAmount
+      sortable
+    />
   );
 };
 
