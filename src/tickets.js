@@ -53,6 +53,16 @@ export default [
     ],
   },
   {
+    ...getDefaults('PageHeader'),
+    type: 'group',
+    children: [
+      {
+        ...getDefaults('PUI-2920'),
+        path: 'PageHeader/PUI-2920',
+      },
+    ],
+  },
+  {
     ...getDefaults('TooltipTextProvider'),
     type: 'group',
     children: [

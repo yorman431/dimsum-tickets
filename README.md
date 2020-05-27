@@ -8,7 +8,7 @@ Just send me a DM in Slack with your github email/username and I'll send you the
 
 If you prefer just fork the repo, remember to keep your **master** branch updated.
 
-## Add Prettier as your default code formatter in preference settings:
+## Add Prettier as your default code formatter in preference settings (**Workspace**):
 
 `"editor.defaultFormatter": "esbenp.prettier-vscode"`
 
@@ -27,5 +27,9 @@ To add your ticket example just:
 - Create your file in `src/YourDSComponent/YourTicketID`
 - Add the file's path to `src/tickets.js`
 - Test your changes in localhost
-- Push your branch and create the PR against **master**
-- Once merged it will automatically be deployed to https://dasm30.github.io/dimsum-tickets/
+- Option 1 (master)
+  - Push your branch and create the PR against **master**
+  - Once merged it will automatically be deployed to https://dasm30.github.io/dimsum-tickets/
+- Option 2 (develop)
+  - Push your changes to develop no need for a PR (if you're a collaborator)
+  - Automatic deployment will go to https://dimsum-tickets.herokuapp.com/
