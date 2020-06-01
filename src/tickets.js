@@ -60,6 +60,20 @@ export default [
         ...getDefaults('PUI-2920'),
         path: 'PageHeader/PUI-2920',
       },
+      {
+        ...getDefaults('PUI-2976'),
+        path: 'PageHeader/PUI-2976',
+      },
+    ],
+  },
+  {
+    ...getDefaults('Toggle'),
+    type: 'group',
+    children: [
+      {
+        ...getDefaults('Overview'),
+        path: 'Toggle/Overview',
+      },
     ],
   },
   {
