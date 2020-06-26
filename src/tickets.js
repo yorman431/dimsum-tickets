@@ -37,6 +37,10 @@ export default [
         path: 'DataGrid/PUI-2604',
       },
       {
+        ...getDefaults('PUI-3317'),
+        path: 'DataGrid/PUI-3317',
+      },
+      {
         ...getDefaults('ToolbarIssues'),
         path: 'DataGrid/ToolbarIssues',
       },
