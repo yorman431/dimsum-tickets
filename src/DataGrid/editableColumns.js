@@ -1,10 +1,10 @@
-import React from "react";
-import DSComboBox from "@elliemae/ds-basic/dscombobox";
+import React from 'react';
+import DSComboBox from '@elliemae/ds-basic/dscombobox';
 
 const options = [
-  { value: "Borrower", label: "Borrower" },
-  { value: "Co-Borrower", label: "Co-Borrower" },
-  { value: "Both", label: "Both" }
+  { value: 'Borrower', label: 'Borrower' },
+  { value: 'Co-Borrower', label: 'Co-Borrower' },
+  { value: 'Both', label: 'Both' },
 ];
 
 const OwnerComboBox = ({ value, onValue, rowData }) => {
@@ -12,10 +12,10 @@ const OwnerComboBox = ({ value, onValue, rowData }) => {
     <DSComboBox
       autoFocus
       menuIsOpen
-      onBlur={() => onValue(value === "Yes")}
-      onChange={val => onValue(val, rowData)}
+      onBlur={() => onValue(value === 'Yes')}
+      onChange={(val) => onValue(val, rowData)}
       options={options}
-      value={value === "Yes"}
+      value={value === 'Yes'}
     />
   );
 };
@@ -25,47 +25,50 @@ const OverTimeComboBox = ({ value, onValue, rowData }) => {
     <DSComboBox
       autoFocus
       menuIsOpen
-      onBlur={() => onValue(value === "Yes")}
-      onChange={val => onValue(val, rowData)}
+      onBlur={() => onValue(value === 'Yes')}
+      onChange={(val) => onValue(val, rowData)}
       options={options}
-      value={value === "Yes"}
+      value={value === 'Yes'}
     />
   );
 };
 
 export default [
   {
-    property: "name",
-    label: "Name",
+    property: 'name',
+    label: 'Name',
     editable: true,
     sortable: true,
-    resizable: true
+    resizable: true,
   },
   {
-    property: "owner",
-    label: "Owner",
+    property: 'owner',
+    label: 'Owner',
     editable: true,
     resizable: true,
-    customEditor: OwnerComboBox
+    sortable: true,
+    customEditor: OwnerComboBox,
   },
   {
-    property: "salary",
-    label: "Salary",
+    property: 'salary',
+    label: 'Salary',
     editable: true,
     searchable: true,
-    resizable: true
+    sortable: true,
+    resizable: true,
   },
   {
-    property: "monthly",
-    label: "Monthly",
+    property: 'monthly',
+    label: 'Monthly',
     editable: true,
-    resizable: true
+    sortable: true,
+    resizable: true,
   },
   {
-    property: "overtime",
-    label: "Overtime",
+    property: 'overtime',
+    label: 'Overtime',
     editable: true,
     resizable: true,
-    customEditor: OverTimeComboBox
-  }
+    customEditor: OverTimeComboBox,
+  },
 ];
