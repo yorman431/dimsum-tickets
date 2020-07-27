@@ -106,6 +106,10 @@ export default [
         ...getDefaults('PUI-2690'),
         path: 'TreeView/PUI-2690',
       },
+      {
+        ...getDefaults('LotsOfData'),
+        path: 'TreeView/LotsOfData',
+      },
     ],
   },
   {
