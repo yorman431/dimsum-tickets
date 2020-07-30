@@ -126,4 +126,14 @@ export default [
       },
     ],
   },
+  {
+    ...getDefaults('SearchBox'),
+    type: 'group',
+    children: [
+      {
+        ...getDefaults('PUI-3638'),
+        path: 'SearchBox/PUI-3638',
+      },
+    ],
+  },
 ];
