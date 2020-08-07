@@ -111,6 +111,14 @@ export default [
         path: 'TreeView/PUI-2690',
       },
       {
+        ...getDefaults('MultiSelect'),
+        path: 'TreeView/MultiSelect',
+      },
+      {
+        ...getDefaults('SingleSelect'),
+        path: 'TreeView/SingleSelect',
+      },
+      {
         ...getDefaults('LotsOfData'),
         path: 'TreeView/LotsOfData',
       },

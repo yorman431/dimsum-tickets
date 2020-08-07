@@ -3,6 +3,7 @@ import './styles.scss';
 import '@elliemae/ds-system/theme';
 import MainLayout from './MainLayout';
 import styled from 'styled-components';
+import pkg from '../package.json';
 
 const StyledDiv = styled.div`
   padding: 8px;
@@ -16,7 +17,12 @@ const StyledLabel = styled.div`
 export default function App() {
   return (
     <StyledDiv>
-      <StyledLabel>Select a ticket to render on the right pane</StyledLabel>
+      <StyledLabel>
+        Select a ticket to render on the right pane
+      </StyledLabel>
+      <StyledLabel>
+        {pkg.dependencies['@elliemae/ds-basic']}
+      </StyledLabel>
       <MainLayout />
     </StyledDiv>
   );
