@@ -20,7 +20,7 @@ const renderTicket = (path) =>
 
 const StyledDiv = styled.div`
   display: flex !important;
-  height: 96%;
+  height: calc(100% - 60px);
 `;
 const TicketView = styled.div`
   width: 100%;

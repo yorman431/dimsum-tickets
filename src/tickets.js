@@ -122,6 +122,20 @@ export default [
         ...getDefaults('LotsOfData'),
         path: 'TreeView/LotsOfData',
       },
+      {
+        ...getDefaults('AutoScroll'),
+        type: 'group',
+        children: [
+          {
+            ...getDefaults('MultiSelect'),
+            path: 'TreeView/AutoScroll/MultiSelect',
+          },
+          {
+            ...getDefaults('Overview'),
+            path: 'TreeView/AutoScroll/Overview',
+          },
+        ],
+      },
     ],
   },
   {
