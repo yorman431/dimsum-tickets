@@ -32,6 +32,7 @@ const MainLayout = () => {
   const onItemClick = (item) => {
     if (item.type === 'group' || !item.path) return;
     setSelectedTicket(item.path);
+    console.log(item.path);
   };
 
   const Ticket = renderTicket(selectedTicket);

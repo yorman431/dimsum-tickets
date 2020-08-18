@@ -47,6 +47,16 @@ export default [
     ],
   },
   {
+    ...getDefaults('DateTimePicker'),
+    type: 'group',
+    children: [
+      {
+        ...getDefaults('PUI-3728'),
+        path: 'DateTimePicker/PUI-3728',
+      },
+    ],
+  },
+  {
     ...getDefaults('FormItemLayout'),
     type: 'group',
     children: [
