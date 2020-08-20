@@ -10,6 +10,7 @@ import styled from 'styled-components';
 import Loadable from 'react-loadable';
 import DSSeparator from '@elliemae/ds-basic/Separator';
 import DSSpinner from '@elliemae/ds-basic/Spinner';
+import pkg from '../package.json';
 
 const renderTicket = (path) =>
   Loadable({
@@ -20,10 +21,17 @@ const renderTicket = (path) =>
 
 const StyledDiv = styled.div`
   display: flex !important;
-  height: calc(100% - 60px);
+  height: 100%;
 `;
 const TicketView = styled.div`
   width: 100%;
+`;
+const StyledLabel = styled.div`
+  margin-bottom: 16px;
+  font-weight: bold;
+`;
+const TreeContainer = styled.div`
+  height: calc(100% - 48px);
 `;
 
 const MainLayout = () => {
@@ -39,19 +47,27 @@ const MainLayout = () => {
 
   return (
     <StyledDiv>
-      <TreeView
-        data={tickets}
-        fluid
-        groupIcon={<Folder />}
-        itemIcon={<FilePdf />}
-        onItemClick={onItemClick}
-        plugins={[SelectablePluginTree]}
-        showChildrenAmount
-        width={256}
-      />
+      <TreeContainer>
+        <StyledLabel>
+          Select a ticket to render on the right pane
+        </StyledLabel>
+        <StyledLabel>
+          {pkg.dependencies['@elliemae/ds-basic']}
+        </StyledLabel>
+        <TreeView
+          data={tickets}
+          fluid
+          groupIcon={<Folder />}
+          itemIcon={<FilePdf />}
+          onItemClick={onItemClick}
+          plugins={[SelectablePluginTree]}
+          showChildrenAmount
+          width={256}
+        />
+      </TreeContainer>
       <DSSeparator
         orientation="vertical"
-        style={{ height: `${window.innerHeight - 80}px` }}
+        style={{ height: `${window.innerHeight - 20}px` }}
       />
       {selectedTicket && (
         <TicketView>
