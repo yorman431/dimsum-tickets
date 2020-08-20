@@ -2,7 +2,8 @@ import React from 'react';
 import './styles.scss';
 import '@elliemae/ds-system/theme';
 import MainLayout from './MainLayout';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import { DSTheme } from '@elliemae/ds-system';
 import pkg from '../package.json';
 
 const StyledDiv = styled.div`
@@ -23,7 +24,9 @@ export default function App() {
       <StyledLabel>
         {pkg.dependencies['@elliemae/ds-basic']}
       </StyledLabel>
-      <MainLayout />
+      <ThemeProvider theme={DSTheme}>
+        <MainLayout />
+      </ThemeProvider>
     </StyledDiv>
   );
 }
