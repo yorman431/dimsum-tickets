@@ -6,10 +6,9 @@ import {
 } from '@elliemae/ds-treeview';
 import Folder from '@elliemae/ds-icons/Folder';
 import FilePdf from '@elliemae/ds-icons/FilePdf';
-import SearchBox from '@elliemae/ds-basic/form/SearchBox';
-import DSToolbar from '@elliemae/ds-basic/Toolbar';
-import DSSeparator from '@elliemae/ds-basic/Separator';
+import { TreeToolbar } from '../components/TreeToolbar';
 import { randomEntities } from '../utils/randomTreeNodes';
+import { TreeContainer } from '../components/TreeContainer';
 
 const nodes = randomEntities(2500);
 
@@ -18,27 +17,11 @@ const LotsOfElements = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
-    <>
+    <TreeContainer offsetHeight={48}>
       <div style={{ height: '100%' }}>
-        <DSToolbar withDepth={false}>
-          {/* <DSButton
-            buttonType='secondary'
-            labelText='Toggle Expand'
-            onClick={() => instanceRef.current.actions.toggleExpandAll()}
-          /> */}
-          <SearchBox
-            clearable
-            containerProps={{ 'data-testid': 'tree-searchbox' }}
-            onSearch={({ value }) => setSearchQuery(value)}
-            placeholder="Search all"
-            searchOnEnter={false}
-            value={searchQuery}
-          />
-        </DSToolbar>
-        <DSSeparator
-          margin="none"
-          orientation="horizontal"
-          type="non-form"
+        <TreeToolbar
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
         />
         <TreeView
           data={nodes}
@@ -58,7 +41,7 @@ const LotsOfElements = () => {
           sortable
         />
       </div>
-    </>
+    </TreeContainer>
   );
 };
 
