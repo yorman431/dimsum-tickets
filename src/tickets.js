@@ -137,12 +137,16 @@ export default [
         type: 'group',
         children: [
           {
-            ...getDefaults('MultiSelect'),
-            path: 'TreeView/AutoScroll/MultiSelect',
-          },
-          {
             ...getDefaults('Overview'),
             path: 'TreeView/AutoScroll/Overview',
+          },
+          {
+            ...getDefaults('SingleSelect'),
+            path: 'TreeView/AutoScroll/SingleSelect',
+          },
+          {
+            ...getDefaults('MultiSelect'),
+            path: 'TreeView/AutoScroll/MultiSelect',
           },
         ],
       },
