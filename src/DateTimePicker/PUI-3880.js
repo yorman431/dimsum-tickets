@@ -8,13 +8,8 @@ const Component = () => {
     show: true
   });
   const [loan, setLoan] = useState({
-    value: null
+    value: moment(fieldValue)
   });
-
-  useEffect(() => {
-    setTimeout(() => setLoan({ value: moment(fieldValue)}), 3000)
-  }, [])
-
   const changeEvent = (event) => {
     const newValue = event ? moment(event) : event;
     setLoan({
