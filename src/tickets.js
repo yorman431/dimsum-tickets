@@ -44,6 +44,10 @@ export default [
         ...getDefaults('ToolbarIssues'),
         path: 'DataGrid/ToolbarIssues',
       },
+      {
+        ...getDefaults('WithToggles'),
+        path: 'DataGrid/WithToggles',
+      },
     ],
   },
   {
