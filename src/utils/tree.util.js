@@ -77,3 +77,16 @@ export const selectedItemsMapper = (treeViewRef, allItems) => (
   );
   return selectedItems;
 };
+
+/**
+ * Converts an array of each path's portion into expandedRows format for tree view
+ * @param {Array} path String paths array
+ */
+export const mapPathsToExpandedRows = (path = []) => {
+  let realPath = path;
+  if (typeof path === 'string') realPath = path.split('/');
+  return realPath.reduce((acc, section) => {
+    acc[section] = true;
+    return acc;
+  }, {});
+};

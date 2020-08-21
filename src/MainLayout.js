@@ -11,6 +11,7 @@ import Loadable from 'react-loadable';
 import DSSeparator from '@elliemae/ds-basic/Separator';
 import DSSpinner from '@elliemae/ds-basic/Spinner';
 import pkg from '../package.json';
+import { mapPathsToExpandedRows } from './utils/tree.util';
 
 const renderTicket = (path) =>
   Loadable({
@@ -35,15 +36,23 @@ const TreeContainer = styled.div`
 `;
 
 const MainLayout = () => {
-  const [selectedTicket, setSelectedTicket] = useState('');
+  const path = window.location.pathname?.substring(16);
+  const [selectedTicket, setSelectedTicket] = useState(path);
 
   const onItemClick = (item) => {
-    if (item.type === 'group' || !item.path) return;
-    setSelectedTicket(item.path);
-    console.log(item.path);
+    if (item.type === 'group' || !item.id) return;
+    setSelectedTicket(item.id);
+    // to keep it simple as we don't need routing
+    window.history.pushState(
+      null,
+      null,
+      `/dimsum-tickets/${item.id}`,
+    );
+    console.log(item.id);
   };
 
   const Ticket = renderTicket(selectedTicket);
+  console.log(11111, path);
 
   return (
     <StyledDiv>
@@ -63,6 +72,8 @@ const MainLayout = () => {
           plugins={[SelectablePluginTree]}
           showChildrenAmount
           width={256}
+          selection={{ [selectedTicket]: true }}
+          expandedRows={mapPathsToExpandedRows(path)}
         />
       </TreeContainer>
       <DSSeparator
