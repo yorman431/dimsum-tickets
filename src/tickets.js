@@ -26,7 +26,11 @@ export default [
   {
     ...getDefaults('DateTimePicker'),
     type: 'group',
-    children: [getDefaults('DateTimePicker/PUI-3728')],
+    children: [
+      getDefaults('DateTimePicker/PUI-3728'),
+      getDefaults('DateTimePicker/PUI-3880'),
+      getDefaults('DateTimePicker/PUI-3993'),
+    ],
   },
   {
     ...getDefaults('FormItemLayout'),
