@@ -33,6 +33,20 @@ export default [
     ],
   },
   {
+    ...getDefaults('Date'),
+    type: 'group',
+    children: [
+      getDefaults('Date/PUI-4076'),
+    ],
+  },
+  {
+    ...getDefaults('TextBox'),
+    type: 'group',
+    children: [
+      getDefaults('TextBox/example'),
+    ],
+  },
+  {
     ...getDefaults('FormItemLayout'),
     type: 'group',
     children: [getDefaults('FormItemLayout/LargeInputText')],
