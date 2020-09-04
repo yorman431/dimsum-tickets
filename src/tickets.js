@@ -35,16 +35,12 @@ export default [
   {
     ...getDefaults('Date'),
     type: 'group',
-    children: [
-      getDefaults('Date/PUI-4076'),
-    ],
+    children: [getDefaults('Date/PUI-4076')],
   },
   {
     ...getDefaults('TextBox'),
     type: 'group',
-    children: [
-      getDefaults('TextBox/example'),
-    ],
+    children: [getDefaults('TextBox/example')],
   },
   {
     ...getDefaults('FormItemLayout'),
@@ -80,6 +76,8 @@ export default [
       getDefaults('TreeView/MultiSelect'),
       getDefaults('TreeView/SingleSelect'),
       getDefaults('TreeView/LotsOfData'),
+      getDefaults('TreeView/ToggleExpand'),
+      getDefaults('TreeView/InModal'),
       {
         ...getDefaults('AutoScroll'),
         type: 'group',

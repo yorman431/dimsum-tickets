@@ -2,16 +2,23 @@ import React from 'react';
 import SearchBox from '@elliemae/ds-basic/form/SearchBox';
 import DSToolbar from '@elliemae/ds-basic/Toolbar';
 import DSSeparator from '@elliemae/ds-basic/Separator';
+import DSButton from '@elliemae/ds-basic/Button';
 
-export const TreeToolbar = ({ searchQuery, setSearchQuery }) => {
+export const TreeToolbar = ({
+  searchQuery,
+  setSearchQuery,
+  toggleExpandAll,
+}) => {
   return (
     <>
       <DSToolbar withDepth={false}>
-        {/* <DSButton
-            buttonType='secondary'
-            labelText='Toggle Expand'
-            onClick={() => instanceRef.current.actions.toggleExpandAll()}
-          /> */}
+        {toggleExpandAll && (
+          <DSButton
+            buttonType="secondary"
+            labelText="Toggle Expand"
+            onClick={toggleExpandAll}
+          />
+        )}
         <SearchBox
           clearable
           containerProps={{ 'data-testid': 'tree-searchbox' }}

@@ -41,3 +41,25 @@ export const randomEntitiesNoChildren = (count) =>
   new Array(count).fill(0).map(() => {
     return randomEntityNoChildren();
   });
+
+/** With increased chances of getting a group */
+export const randomEntityMoreGroup = () => {
+  const id = uuidv4();
+  const isGroup = random(0, 4) < 3;
+  let children = isGroup
+    ? randomEntities(random(0, 2), id)
+    : undefined;
+  if (random(0, 4) < 2) children = [];
+  return {
+    id,
+    name: `${random(0, 1) > 0 ? 'John Doe' : 'Jon Snow'} ${id}`,
+    type: isGroup ? 'group' : 'single',
+    children,
+    isGroup,
+  };
+};
+/** With increased chances of getting more groups */
+export const randomEntitiesMoreGroups = (count) =>
+  new Array(count).fill(0).map(() => {
+    return randomEntityMoreGroup();
+  });

@@ -43,16 +43,17 @@ const MainLayout = () => {
     if (item.type === 'group' || !item.id) return;
     setSelectedTicket(item.id);
     // to keep it simple as we don't need routing
-    window.history.pushState(
-      null,
-      null,
-      `/dimsum-tickets/${item.id}`,
-    );
-    console.log(item.id);
+    if (window.location.hostname === 'localhost') {
+      window.history.pushState(
+        null,
+        null,
+        `/dimsum-tickets/${item.id}`,
+      );
+    }
+    console.log(item.id, window.location);
   };
 
   const Ticket = renderTicket(selectedTicket);
-  console.log(11111, path);
 
   return (
     <StyledDiv>
