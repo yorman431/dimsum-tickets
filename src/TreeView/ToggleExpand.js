@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, useMemo } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import {
   TreeView,
   SelectablePluginTree,
@@ -9,10 +9,11 @@ import FilePdf from '@elliemae/ds-icons/FilePdf';
 import { TreeToolbar } from '../components/TreeToolbar';
 import { randomEntitiesMoreGroups } from '../utils/randomTreeNodes';
 import { TreeContainer } from '../components/TreeContainer';
+// import { SearchableTreePlugin } from './SearchableTreePlugin';
 
 const nodes = randomEntitiesMoreGroups(100);
 
-const ToggleExpand = () => {
+const ToggleExpand = (props) => {
   const instanceRef = useRef(null);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -42,6 +43,7 @@ const ToggleExpand = () => {
           plugins={[SelectablePluginTree, SearchableTreePlugin]}
           searchQuery={searchQuery}
           showChildrenAmount
+          {...props}
         />
       </div>
     </TreeContainer>

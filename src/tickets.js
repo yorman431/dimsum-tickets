@@ -77,7 +77,14 @@ export default [
       getDefaults('TreeView/SingleSelect'),
       getDefaults('TreeView/LotsOfData'),
       getDefaults('TreeView/ToggleExpand'),
-      getDefaults('TreeView/InModal'),
+      {
+        ...getDefaults('InModal'),
+        type: 'group',
+        children: [
+          getDefaults('TreeView/InModal/ToggleExpand'),
+          getDefaults('TreeView/InModal/InitialSelections'),
+        ],
+      },
       {
         ...getDefaults('AutoScroll'),
         type: 'group',

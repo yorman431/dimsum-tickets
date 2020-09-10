@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ToggleExpand from './ToggleExpand';
+import ToggleExpand from '../ToggleExpand';
 import DSModal, { MODAL_TYPE_V2 } from '@elliemae/ds-modal';
 import DSButton from '@elliemae/ds-basic/Button';
 
-export default () => {
+export default (props) => {
   const [isOpen, setOpen] = useState(false);
   const toggle = () => setOpen(!isOpen);
   return (
@@ -23,7 +23,7 @@ export default () => {
         version={2}
       >
         <div style={{ height: '400px' }}>
-          <ToggleExpand />
+          <ToggleExpand {...props} />
         </div>
       </DSModal>
     </>
