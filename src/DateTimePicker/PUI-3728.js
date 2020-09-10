@@ -10,7 +10,7 @@ const Component = () => {
     show: true
   });
   const [loan, setLoan] = useState({
-    value: moment.utc(fieldValue).local()
+    value: null
   });
 
   const changeEvent = (event, key) => {
@@ -24,7 +24,6 @@ const Component = () => {
   };
 
   const changeListener = (selectedDate) => {
-    console.log('selectDate: ',selectedDate);
     if (!selectedDate._i) {
       changeEvent(selectedDate);
     } else if (
@@ -46,7 +45,7 @@ const Component = () => {
     if (show) {
       const date = moment.utc(fieldValue).local();
       console.log(date);
-      setLoan({value: moment.utc(date._d).local()})
+      setLoan({value: null})
     }
   }
   return (
