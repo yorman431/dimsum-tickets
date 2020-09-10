@@ -35,7 +35,7 @@ export default [
   {
     ...getDefaults('Date'),
     type: 'group',
-    children: [getDefaults('Date/PUI-4076')],
+    children: [getDefaults('DatePicker/PUI-4076')],
   },
   {
     ...getDefaults('TextBox'),
