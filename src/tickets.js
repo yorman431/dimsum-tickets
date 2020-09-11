@@ -95,6 +95,7 @@ export default [
           getDefaults('TreeView/AutoScroll/MultiSelect'),
         ],
       },
+      getDefaults('TreeView/Highlighted'),
     ],
   },
   {
