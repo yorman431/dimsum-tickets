@@ -32,6 +32,7 @@ export default [
       getDefaults('DateTimePicker/PUI-3880'),
       getDefaults('DateTimePicker/PUI-3993'),
       getDefaults('DateTimePicker/PUI-4190'),
+      getDefaults('DateTimePicker/PUI-4266'),
     ],
   },
   {
