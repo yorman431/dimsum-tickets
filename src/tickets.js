@@ -9,6 +9,11 @@ const getDefaults = (path) => ({
 
 export default [
   {
+    ...getDefaults('ComboBox'),
+    type: 'group',
+    children: [getDefaults('ComboBox/Bottom')],
+  },
+  {
     ...getDefaults('DataGrid'),
     type: 'group',
     children: [
@@ -107,5 +112,10 @@ export default [
     ...getDefaults('SearchBox'),
     type: 'group',
     children: [getDefaults('SearchBox/PUI-3638')],
+  },
+  {
+    ...getDefaults('Grid'),
+    type: 'group',
+    children: [getDefaults('Grid/Overview')],
   },
 ];
