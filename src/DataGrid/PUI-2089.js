@@ -1,7 +1,7 @@
-import React from "react";
-import { DSDataGrid } from "@elliemae/ds-datagrids";
-import columns from "./columns";
-import { randomGroupedEntities } from "../utils/randomData";
+import React from 'react';
+import { DSDataGrid } from '@elliemae/ds-datagrids';
+import columns from './columns';
+import { randomGroupedEntities } from '../utils/randomData';
 
 const groupedRows = randomGroupedEntities(5);
 
@@ -24,7 +24,7 @@ export default () => {
       resizeableColumns
       getChildrenRows={({ rowData }) => rowData.children}
       groupedRows
-      groupedRowsRenderHeader={rowData => {
+      groupedRowsRenderHeader={(rowData) => {
         const { group } = rowData || {};
         return <> Group : {group} </>;
       }}
