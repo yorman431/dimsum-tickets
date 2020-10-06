@@ -13,24 +13,15 @@ const Component = () => {
   });
 
   const changeEvent = (event, key) => {
-    const newValue = event ? moment(event).utc().format() : event;
-    if (key) {
+    const newValue = event ? moment((event).format()) : event;
+    console.log(newValue);
       setLoan({
-        key: key,
         value: newValue,
       });
-    }
   };
 
   const changeListener = (selectedDate) => {
-    if (!selectedDate._i) {
-      changeEvent(selectedDate);
-    } else if (
-      moment(selectedDate._i, 'YYYY-MM-DD', true).isValid() ||
-      moment(selectedDate._i, 'MM/DD/YYYY', true).isValid()
-    ) {
-      changeEvent(selectedDate);
-    }
+    changeEvent(selectedDate);
   }
 
   function toggleValue(e) {
