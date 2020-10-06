@@ -9,23 +9,6 @@
   "main": "src/index.js",
   "dependencies": {
     "@babel/runtime": "7.11.2",
-<<<<<<< HEAD
-    "@elliemae/ds-basic": "1.20.2",
-    "@elliemae/ds-classnames": "1.20.2",
-    "@elliemae/ds-datagrids": "1.20.2",
-    "@elliemae/ds-date-picker": "1.20.2",
-    "@elliemae/ds-date-time-picker": "1.20.2",
-    "@elliemae/ds-dropdownmenu": "1.20.2",
-    "@elliemae/ds-filterbar": "1.20.2",
-    "@elliemae/ds-icons": "1.20.2",
-    "@elliemae/ds-modal": "1.20.2",
-    "@elliemae/ds-search-field": "1.20.2",
-    "@elliemae/ds-shared": "1.20.2",
-    "@elliemae/ds-system": "1.20.2",
-    "@elliemae/ds-treeview": "1.20.2",
-    "@elliemae/ds-utilities": "1.20.2",
-    "@elliemae/ds-shuttle": "1.20.2",
-=======
     "@elliemae/ds-basic": "1.20.8",
     "@elliemae/ds-classnames": "1.20.8",
     "@elliemae/ds-datagrids": "1.20.8",
@@ -41,7 +24,6 @@
     "@elliemae/ds-treeview": "1.20.8",
     "@elliemae/ds-utilities": "1.20.8",
     "@elliemae/ds-shuttle": "1.20.8",
->>>>>>> upstream/master
     "@elliemae/pui-theme": "1.4.0",
     "core-js": "3.6.5",
     "hotkeys-js": "3.8.1",
