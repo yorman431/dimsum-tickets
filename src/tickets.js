@@ -52,7 +52,10 @@ export default [
   {
     ...getDefaults('FormItemLayout'),
     type: 'group',
-    children: [getDefaults('FormItemLayout/LargeInputText')],
+    children: [
+      getDefaults('FormItemLayout/LargeInputText'),
+      getDefaults('FormItemLayout/ComboBox2_Bottom'),
+    ],
   },
   {
     ...getDefaults('PageHeader'),
