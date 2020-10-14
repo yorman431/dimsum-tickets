@@ -83,6 +83,7 @@ export default [
       getDefaults('TreeView/PUI-2579'),
       getDefaults('TreeView/PUI-2690-B'),
       getDefaults('TreeView/PUI-2690'),
+      getDefaults('TreeView/PUI-4504'),
       getDefaults('TreeView/MultiSelect'),
       getDefaults('TreeView/SingleSelect'),
       getDefaults('TreeView/LotsOfData'),
