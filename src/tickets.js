@@ -48,6 +48,11 @@ export default [
     children: [getDefaults('DatePicker/PUI-4076')],
   },
   {
+    ...getDefaults('DateRange'),
+    type: 'group',
+    children: [getDefaults('DateRange/TypingDate')],
+  },
+  {
     ...getDefaults('TextBox'),
     type: 'group',
     children: [getDefaults('TextBox/example')],
@@ -55,7 +60,10 @@ export default [
   {
     ...getDefaults('FormItemLayout'),
     type: 'group',
-    children: [getDefaults('FormItemLayout/LargeInputText')],
+    children: [
+      getDefaults('FormItemLayout/LargeInputText'),
+      getDefaults('FormItemLayout/ComboBox2_Bottom'),
+    ],
   },
   {
     ...getDefaults('PageHeader'),
@@ -83,6 +91,7 @@ export default [
       getDefaults('TreeView/PUI-2579'),
       getDefaults('TreeView/PUI-2690-B'),
       getDefaults('TreeView/PUI-2690'),
+      getDefaults('TreeView/PUI-4504'),
       getDefaults('TreeView/MultiSelect'),
       getDefaults('TreeView/SingleSelect'),
       getDefaults('TreeView/LotsOfData'),
