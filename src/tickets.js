@@ -45,7 +45,10 @@ export default [
   {
     ...getDefaults('Date'),
     type: 'group',
-    children: [getDefaults('DatePicker/PUI-4076')],
+    children: [
+      getDefaults('DatePicker/PUI-4076'),
+      getDefaults('DatePicker/PUI-4635'),
+    ],
   },
   {
     ...getDefaults('DateRange'),
