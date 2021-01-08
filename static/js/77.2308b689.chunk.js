@@ -1,0 +1,2 @@
+(this.webpackJsonpreact=this.webpackJsonpreact||[]).push([[77],{196:function(e,t,a){"use strict";a.r(t);var l=a(0),n=a.n(l),r=a(932);t.default=()=>n.a.createElement(r.a,{rows:[1,1],gutter:2},n.a.createElement(r.a,{cols:{large:[4,8],medium:[4,8]},gutter:2},"Row 1"),n.a.createElement(r.a,{cols:{large:[4,4,4],medium:[4,4,4]},gutter:2},n.a.createElement("div",null,"Element 1"),n.a.createElement("div",null,"Element 2"),n.a.createElement("div",null,"Element 3")))}}]);
+//# sourceMappingURL=77.2308b689.chunk.js.map
