@@ -1,6 +1,7 @@
 import React, {useState, memo} from 'react';
 import moment from 'moment';
 import DSDatePicker from '@elliemae/ds-date-picker';
+import DSFormItemLayout from '@elliemae/ds-basic/form/FormItem';
 
 const Component = () => {
   const [date, setDate] = useState();
@@ -27,18 +28,23 @@ const Component = () => {
       <button onClick={setNullDate}>Set Null Value</button>
 
       { toggle.show ?
-        <DSDatePicker
+
+        <DSFormItemLayout
           className="example-class-name"
           containerProps={{ id: 'my-custom-id' }}
+          inputComponent={DSDatePicker}
+          extraInputProps={{
+            datePickerProps : {
+              hideKeyboardShortcutsPanel: true,
+            },
+            pickerProps: {
+              tabIndex: 1
+            },
+            calendarProps: {
+              tabIndex: 2
+            }
+          }}
           disabled={false}
-          enableOutsideDays
-          firstDayOfWeek={0}
-          hasError={false}
-          hideKeyboardShortcutsPanel
-          isDayBlocked={(day) => new Date(day) < new Date(2020, 7, 5)}
-          isDayHighlighted={() => false}
-          isOutsideRange={false}
-          keepOpenOnDateSelect={false}
           onBlur={(val) => {
             //onBlur({ input: _i, isValid: _isValid });
             setDate(val);
@@ -47,8 +53,9 @@ const Component = () => {
           onChange={(selectedDate) => {
             // const { _i, _isValid } = selectedDate;
             //onChange({ input: _i, isValid: _isValid });
-            // setDate(selectedDate);
-            console.log(selectedDate);
+            const newDate = selectedDate.format('YYYY-MM-DD');
+            setDate(selectedDate);
+            console.log(newDate);
           }}
           onClose={() => {}}
           onFocus={() => {}}
@@ -59,13 +66,6 @@ const Component = () => {
           transitionDuration={0}
           value={date}
           verticalSpacing={0}
-          tabIndex={0}
-          pickerProps={{
-            tabindex: 1,
-          }}
-          calendarProps={{
-            tabindex: 2,
-          }}
         />
         : null
       }

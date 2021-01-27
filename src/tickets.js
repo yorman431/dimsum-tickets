@@ -43,6 +43,7 @@ export default [
       getDefaults('DateTimePicker/PUI-4636'),
       getDefaults('DateTimePicker/PUI-5443'),
       getDefaults('DateTimePicker/NGENY-23506'),
+      getDefaults('DateTimePicker/PUI-5575'),
     ],
   },
   {
@@ -53,6 +54,7 @@ export default [
       getDefaults('DatePicker/PUI-4635'),
       getDefaults('DatePicker/PUI-5427'),
       getDefaults('DatePicker/PUI-5442'),
+      getDefaults('DatePicker/dateEvent'),
     ],
   },
   {
@@ -139,5 +141,10 @@ export default [
     ...getDefaults('Grid'),
     type: 'group',
     children: [getDefaults('Grid/Overview')],
+  },
+  {
+    ...getDefaults('ZipCodeSearch'),
+    type: 'group',
+    children: [getDefaults('ZipCodeSearch/PUI-4021')],
   },
 ];
