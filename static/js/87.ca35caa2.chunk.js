@@ -1,0 +1,2 @@
+(this.webpackJsonpreact=this.webpackJsonpreact||[]).push([[87],{188:function(t,e,a){"use strict";a.r(e),a.d(e,"StyledFormItemLayout",(function(){return o}));var c,n=a(34),r=a(19),s=a(842);const o=Object(r.default)(s.a)(c||(c=Object(n.a)(["\n  max-width: 200px;\n"])))}}]);
+//# sourceMappingURL=87.ca35caa2.chunk.js.map
