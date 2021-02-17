@@ -145,6 +145,9 @@ export default [
   {
     ...getDefaults('ZipCodeSearch'),
     type: 'group',
-    children: [getDefaults('ZipCodeSearch/PUI-4021')],
+    children: [
+      getDefaults('ZipCodeSearch/PUI-4021'),
+      getDefaults('ZipCodeSearch/PUI-5716')
+    ],
   },
 ];
