@@ -148,6 +148,7 @@ export default [
     children: [
       getDefaults('ZipCodeSearch/PUI-4021'),
       getDefaults('ZipCodeSearch/PUI-5879'),
+      getDefaults('ZipCodeSearch/PUI-5716'),
     ],
   },
 ];
