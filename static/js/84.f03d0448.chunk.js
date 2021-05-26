@@ -1,2 +1,0 @@
-(this.webpackJsonpreact=this.webpackJsonpreact||[]).push([[84],{189:function(e,t,s){"use strict";s.r(t),s.d(t,"useTreeProps",(function(){return n}));var r=s(115),c=s(0);const n=()=>{const e=Object(c.useState)(!1),t=Object(r.a)(e,2),s=t[0],n=t[1];return{disableGroups:s,toggleDisableGroups:()=>n(!s)}}}}]);
-//# sourceMappingURL=84.f03d0448.chunk.js.map
