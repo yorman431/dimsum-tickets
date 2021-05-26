@@ -1,6 +1,6 @@
 import React, {useState, memo} from 'react';
 import DSFormItemLayout from '@elliemae/ds-basic/form/FormItem';
-import DSZipCodeSearch from '@elliemae/ds-basic/dszipcodesearch';
+import DSZipCodeSearch from '@elliemae/ds-basic/ZipCodeSearch';
 
 const Component = () => {
   const [value, setValue] = useState();

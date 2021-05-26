@@ -143,6 +143,11 @@ export default [
     children: [getDefaults('Grid/Overview')],
   },
   {
+    ...getDefaults('NavigationCard'),
+    type: 'group',
+    children: [getDefaults('NavigationCard/NGENY-23695')],
+  },
+  {
     ...getDefaults('ZipCodeSearch'),
     type: 'group',
     children: [

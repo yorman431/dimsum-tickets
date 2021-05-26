@@ -9,7 +9,7 @@ import {
 } from '@elliemae/ds-basic/PageHeader';
 import { ToolbarGroup } from '@elliemae/ds-basic';
 import DSToolbar from '@elliemae/ds-basic/Toolbar';
-import DSSearchBox from '@elliemae/ds-basic/form/SearchBox/DSSearchBox';
+import DSSearchBox from '@elliemae/ds-basic/form/SearchBox';
 
 const groupedRows = randomGroupedEntities(10);
 

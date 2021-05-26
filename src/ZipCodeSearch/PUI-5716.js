@@ -1,5 +1,5 @@
 import React, { useState, memo } from "react";
-import DSZipCodeSearch from "@elliemae/ds-basic/dszipcodesearch";
+import DSZipCodeSearch from "@elliemae/ds-basic/ZipCodeSearch";
 import DSFormItemLayout from "@elliemae/ds-basic/form/FormItem";
 
 const Component = () => {
